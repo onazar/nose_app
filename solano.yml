@@ -1,0 +1,21 @@
+#hooks:
+#  pre_setup: "cp /tmp/abc /tmp/ABC"
+
+:ruby_version: 'ruby-2.1.2'
+
+:python:
+  python_version: 2.7
+  pip_requirements_file: requirements.txt
+
+plan:
+- 1nose
+
+profiles:
+  1nose:
+    :tests:
+    - type: nosetests
+      mode: basic
+      output: exit-status
+      files:
+        - "test/myunit_app_test.py"
+        - "test/myunit_app_test2.py"
