@@ -8,5 +8,5 @@ class MyUnitTest(unittest.TestCase):
     self.assertEquals(app.var, 100)
 
   def testGetVar(self):
-    app = myunit.app.App(200)
+    app= myunit.app.App(200)
     self.assertEquals(app.get_var(), 200)

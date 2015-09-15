@@ -8,6 +8,17 @@ python:
   pip_requirements_file: requirements.txt
 
 tests:
-  - type: custom 
+  - type: nosetests 
     name: my_test_command_name
-    command: "ls /var"
+    #command: ls -l /var
+    files:
+        - "my_tests/myunit_app_test.py"
+        - "my_tests/myunit_app_test2.py"
+        - "my_tests/myunit_app_test.py"
+
+  - type: nosetests
+    name: my_test_command_name2222
+    #command: ls -l /var
+    files:
+        - "test/myunit_app_test.py"
+        - "test/myunit_app_test2.py"
