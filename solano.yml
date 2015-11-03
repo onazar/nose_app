@@ -6,4 +6,7 @@ python:
 
 tests:
   - type: nosetests
+    mode: parallel
+    files:
+    - my_tests/myunit_*.py
 
