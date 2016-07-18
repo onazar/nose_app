@@ -1,10 +1,11 @@
 ruby_version: 'ruby-2.1.2'
-
+ 
 python:
   python_version: 2.7
   pip_requirements_file: requirements.txt
-
-gtype: nosetests
-
-test_pattern:
-  - my_tests/**2.py
+ 
+tests:
+  - type: nosetests
+    mode: parallel
+    files:
+    - my_tests/myunit_*.py
