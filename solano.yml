@@ -9,3 +9,5 @@ tests:
     mode: parallel
     files:
     - my_tests/myunit_*.py
+    - my_tests2/myunit_*.py
+    - my_tests3/myunit_*.py
