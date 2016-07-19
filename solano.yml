@@ -11,3 +11,8 @@ tests:
     - my_tests/myunit_*.py
     - my_tests2/myunit_*.py
     - my_tests3/myunit_*.py
+    - my_tests4/myunit_*.py
+    - my_tests5/myunit_*.py
+    - my_tests6/myunit_*.py
+    - my_tests7/myunit_*.py
+
