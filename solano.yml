@@ -4,10 +4,10 @@ python:
   python_version: 2.7
   pip_requirements_file: requirements.txt
 
-hooks:
-  pre_setup: sleep 10
-  worker_setup: sleep 10
-  post_setup: sleep 10
+#hooks:
+#  pre_setup: sleep 1
+#  worker_setup: sleep 1
+#  post_setup: sleep 1
  
 tests:
   - type: nosetests
@@ -16,8 +16,9 @@ tests:
     - my_tests/myunit_*.py
     - my_tests2/myunit_*.py
     - my_tests3/myunit_*.py
-    - my_tests4/myunit_*.py
-    - my_tests5/myunit_*.py
-    - my_tests6/myunit_*.py
-    - my_tests7/myunit_*.py
+    #- my_tests4/myunit_*.py
+    #- my_tests5/myunit_*.py
+    #- my_tests6/myunit_*.py
+    #- my_tests7/myunit_*.py
+  - exit 888;
 
