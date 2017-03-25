@@ -8,6 +8,8 @@ python:
 #  pre_setup: sleep 1
 #  worker_setup: sleep 1
 #  post_setup: sleep 1
+
+timeout: 5
  
 tests:
   - type: nosetests
